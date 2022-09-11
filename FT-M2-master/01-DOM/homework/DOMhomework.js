@@ -149,7 +149,7 @@ function addToDo() {
   let input = document.querySelector('#toDoInput');
   if(input.value !== ''){
     let toDo = new ToDo (input.value); //toDo ={description: input.value, complete: false}
-    toDoItems.push(toDo); // actualice mi arre de toDos
+    toDoItems.push(toDo); // actualice mi arreglo de toDos
     input.value = ''; //me queda el input vacio
     displayToDos(); // se va a encargar de que aparezca en pantalla el nuevo elemento, en realidad se vuelven a renderizar/mostrar todos de nuevo.
   }
@@ -162,8 +162,8 @@ function addToDo() {
 //   2) Agregarle un 'click' event listener, pasándole la función 'addToDo' como callback
 
 // Tu código acá:
-let add= document.querySelector('#addButton')
-add.addEventListener('Click',addToDo);
+let add= document.querySelector('#addButton');
+add.addEventListener('click',addToDo);
 
 
 // La función completeToDo se va a ejecutar cuando queramos completar un todo
